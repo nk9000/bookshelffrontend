@@ -1,0 +1,184 @@
+.App{
+   margin: 0; padding: 0; box-sizing: border-box;
+   width: 70%;
+   margin: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.navbar{
+  width: 100%;
+  display: flex;
+  height: 9vh;
+  /* padding-left: 0.5rem; */
+  /* background-color: red; */
+}
+.body{
+  /* background-color: rgb(226, 216, 216); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.first{
+  /* background-color: rgb(232, 220, 220); */
+  height: 30%;
+  display:flex;
+  flex-direction:column;
+  margin-top: 1.5rem;
+ 
+  
+  
+}
+.second{
+  /* background-color: red; */
+  height: 30%;
+  display:flex;
+  flex-direction:column;
+  margin-top: 1.5rem;
+}
+.third{
+  /* background-color: yellow; */
+  height: 30%;
+  display:flex;
+  flex-direction:column;
+  margin-top: 1.5rem;
+}
+.text{
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  /* background-color: rgb(252, 200, 200); */
+  width: 30%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pi{
+  height: 12rem;
+  width: 12rem;
+  border-radius: 2rem;
+}
+.cardtext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.toptwo{
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+}
+.one{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.two{
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(133, 136, 136);
+}
+.bottomtwo{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-around;
+  gap: 0.2rem;
+}
+.three{
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.four{
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(133, 136, 136);
+}
+
+#label{
+  text-align: center;
+  margin: 2rem;
+}
+@media only screen and (max-width: 855px) {
+  .App{
+    width: 100%;
+  }
+  .pi {
+    width: 6.5rem; /* Adjust the width for smaller screens */
+    height: 6.5rem; /* Adjust the height for smaller screens */
+    border-radius: 1rem;
+  }
+  .one{
+    font-size: 0.8rem;
+  }
+  .two{
+    font-size: 0.6rem;
+  }
+  .three{
+    font-size: 0.7rem;
+  }
+  .four{
+    font-size: 0.7rem;
+  }
+  .card{
+    height: 30vh;
+    /* background-color: antiquewhite; */
+  }
+  #label{
+    margin-top: 1rem;
+  }
+  .bottomtwo{
+    margin-top: 2rem;
+    gap: 0rem;
+  }
+  .first{
+    margin-top: 0.5rem;
+  }
+  .second{
+    margin-top: 0.5rem;
+  }
+  .third{
+    margin-top: 0.5rem;
+  }
+}
+
+
+/* Add these styles to your existing CSS */
+
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid red;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.plus{
+  color: red;
+}
